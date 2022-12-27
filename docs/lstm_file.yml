@@ -1,0 +1,16 @@
+upload files using cleaning data with the post method.
+    ---
+    tags:
+      - name: upload data file
+    parameters:
+      - name: file
+        in: formData
+        type: file
+        required: true  
+    responses:
+        200:
+            description: output values
+        400:
+            description: bad request
+        500: 
+            description: internal server error  
